@@ -21,6 +21,7 @@
 ```
 CoRE_Project/
 ├── CoRE_Dataset/         # Датасет (метки и пути к изображениям)
+│   ├── images/           # Изображения датасета, следует загрузить отдельно
 │   ├── unified_dataset.csv
 │   └── unified_dataset.txt
 │
@@ -33,6 +34,8 @@ CoRE_Project/
 │   ├── db.sqlite3             # Локальная БД изображений
 │   ├── main.py                # FastAPI сервер
 │   └── my_model.py            # Визуализация Grad-CAM / SHAP
+│
+├── models/              # Обученные модели, следует загрузить отдельно
 │
 ├── image_counter.py     # Подсчёт изображений по классам
 ├── model_analysis.ipynb # Блокнот: обучение и сравнение моделей
@@ -64,7 +67,6 @@ http://localhost:5173
 - `my_model.py`: функции Grad-CAM / SHAP для интерпретации.
 - `model_analysis.ipynb`: обучение моделей, ансамблирование, выбор лучшей.
 - `image_counter.py`: анализ распределения классов в датасете.
-- `models/`: все обученные модели (.ckpt, .pt, .joblib).
 
 ## Особенности
 
@@ -87,7 +89,7 @@ http://localhost:5173
 
 ## Данные
 
-Изображения доступны по [ссылке](https://drive.google.com/drive/folders/15MMHcjJzhz1uHRRJgf05vPD4ZM5i1Vii?usp=sharing)
-Обученные модели доступны по [ссылке](https://drive.google.com/drive/folders/1UW7aF9RBmEQCFEkt0yUwP56WKVXhyHfX?usp=drive_link)
+Изображения доступны по [ссылке](https://drive.google.com/drive/folders/15MMHcjJzhz1uHRRJgf05vPD4ZM5i1Vii?usp=sharing)\
+Обученные модели доступны по [ссылке](https://drive.google.com/drive/folders/1UW7aF9RBmEQCFEkt0yUwP56WKVXhyHfX?usp=sharing)
 
-Автор: Горинов Даниил, ИТМО, 2025
+Автор: Горинов Даниил Андреевич, ИТМО, 2025
